@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clifford Yeboah - Leadership & Legacy Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ghana-red: #ce1126;
+            --ghana-gold: #fcd116;
+            --ghana-green: #006b3f;
+            --navy: #0f172a;
+            --slate: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--slate);
+            margin: 0;
+            padding: 40px 20px;
+            color: var(--navy);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            border-bottom: 8px solid var(--ghana-gold);
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .quote-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            min-height: 320px;
+        }
+
+        .quote-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border-color: var(--ghana-gold);
+        }
+
+        .accent {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            right: 50px;
+            height: 4px;
+            border-radius: 0 0 4px 4px;
+        }
+        .bg-red { background-color: var(--ghana-red); }
+        .bg-gold { background-color: var(--ghana-gold); }
+        .bg-green { background-color: var(--ghana-green); }
+        .bg-navy { background-color: var(--navy); }
+
+        .tag {
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .quote-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            color: #1e293b;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .footer-card {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 20px;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .author {
+            font-weight: 800;
+            font-size: 0.9rem;
+            color: var(--navy);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .title-tagline {
+            font-size: 0.75rem;
+            color: #64748b;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .sig {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            color: #e2e8f0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5rem; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+
+        .page-footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            color: #64748b;
+            font-size: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .copyright {
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>The Clifford Yeboah Collection</h1>
+        <p>Thirty Principles of Truth, Advocacy, and Educational Leadership</p>
+    </div>
+
+    <div class="gallery">
+        <!-- 1 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On Integrity</span>
+            <div class="quote-text">Power without integrity is a house built on sand; when the tide of truth rises, it leaves the oppressor with nothing to say.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Documentation</span>
+            <div class="quote-text">Voices can be drowned out and stories can be changed, but the written truth is an anchor that no storm can move.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Resilience</span>
+            <div class="quote-text">They thought they were burying me, but they didn't know I was a seed. The more they piled on the dirt of lies, the stronger my roots of truth grew.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On Evidence</span>
+            <div class="quote-text">In a room full of false claims, a single piece of evidence is the only light that matters. Lies have no legs to stand on when the truth is documented.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On Mentorship</span>
+            <div class="quote-text">A mentor’s greatest lesson isn't found in a textbook; it is found in showing a student how to stand tall when the world expects them to bow.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Perception</span>
+            <div class="quote-text">I do not need sound to recognise the rhythm of truth. Integrity has its own vibration, and I feel it in my soul.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Advocacy</span>
+            <div class="quote-text">I did not stand up just to save myself; I stood up so the path would be smoother for every student and teacher walking behind me.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On Identity</span>
+            <div class="quote-text">My ears may not hear the noise of the world, but my heart hears the call for justice with perfect clarity.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On Leadership</span>
+            <div class="quote-text">A true leader does not use their position to silence others, but to ensure that even the quietest voice is given the space to be heard.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Courage</span>
+            <div class="quote-text">The courage of a single heart is louder than the silence of a hundred fears.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Liberation</span>
+            <div class="quote-text">Fear is a heavy chain, but the truth is the key that unlocks it. Once you are free, you can never be enslaved by intimidation again.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On Equality</span>
+            <div class="quote-text">Disability is only a limitation in the eyes of those who lack the vision to see our strength.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On the Power of One</span>
+            <div class="quote-text">I waited for others to join me in the fight against injustice, only to realise that sometimes, one must be the light so that others may eventually find their way out of the dark.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Justice vs. Rank</span>
+            <div class="quote-text">They saw a 'lowly' man because I am Deaf; I saw a 'weak' system because they lacked integrity. In the court of truth, knowledge of justice is the ultimate equaliser.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Authority</span>
+            <div class="quote-text">Justice does not recognise rank, and truth does not bow to age. Knowledge of what is right is the ultimate equaliser.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On Advocacy</span>
+            <div class="quote-text">The 'smoking gun' of evidence is only powerful if you have the courage to pull the trigger of truth.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On True Disability</span>
+            <div class="quote-text">True disability is not the loss of hearing; it is the loss of the will to stand up for what is right.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Actions</span>
+            <div class="quote-text">I may be a man of few spoken words, but my actions will always speak volumes for the rights of the vulnerable.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Education</span>
+            <div class="quote-text">A classroom is not just a place for facts; it is a sanctuary where character is forged and the courage to question is born.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On Silence</span>
+            <div class="quote-text">There is a profound difference between being silenced and being silent. One is an act of oppression; the other is a choice of strength.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 21 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On Character</span>
+            <div class="quote-text">The true measure of a man is not found in his titles, but in the echoes of the lives he has uplifted.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 22 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Truth</span>
+            <div class="quote-text">Truth is like the sun; you can hide it behind the clouds of bureaucracy for a while, but it will eventually burn through.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 23 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Purpose</span>
+            <div class="quote-text">My purpose was never to be famous, but to be faithful—faithful to the truth and to those who have no voice.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 24 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On Legacy</span>
+            <div class="quote-text">Legacy is not what we leave for people, but what we leave in them.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 25 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On Responsibility</span>
+            <div class="quote-text">To know the truth and remain silent is to side with the oppressor. Knowledge is not a gift to be kept; it is a tool to be used for justice.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 26 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On Unseen Strength</span>
+            <div class="quote-text">They assume that because I cannot hear their words, I cannot understand their intentions. But I have learned to read the heart, and the heart never lies.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 27 -->
+        <div class="quote-card">
+            <div class="accent bg-green"></div>
+            <span class="tag">On Endurance</span>
+            <div class="quote-text">The road to justice is long and often lonely, but I would rather walk a thousand miles in the light of truth than take a single step in the shadow of a lie.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 28 -->
+        <div class="quote-card">
+            <div class="accent bg-navy"></div>
+            <span class="tag">On the Future</span>
+            <div class="quote-text">We do not build for today; we build for the generations yet unborn, so they may never have to fight the battles we have already won.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 29 -->
+        <div class="quote-card">
+            <div class="accent bg-red"></div>
+            <span class="tag">On True Wealth</span>
+            <div class="quote-text">Wealth is not measured by what you have in your pockets, but by the peace you have in your conscience when you close your eyes at night.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+        <!-- 30 -->
+        <div class="quote-card">
+            <div class="accent bg-gold"></div>
+            <span class="tag">On the Final Word</span>
+            <div class="quote-text">At the end of the day, the noise of the world fades away, and only the truth remains standing. I choose to stand with the truth.</div>
+            <div class="footer-card">
+                <div class="author-info">
+                    <span class="author">Clifford Yeboah</span>
+                    <span class="title-tagline">Teacher • Advocate • Leader</span>
+                </div>
+                <span class="sig">CY</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-footer">
+        <p class="copyright">© 2026 Clifford Yeboah</p>
+        <p>Teacher • Advocate • Leader</p>
+    </div>
+</div>
+
+</body>
+</html>
